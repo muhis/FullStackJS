@@ -1,0 +1,10 @@
+title Adding note SPA
+
+User->Browser:Clicks submit button
+note left of Browser: Prepare Json payload with the new note and the date
+Browser->Server: Post
+Note right of Server: Post payload is a json payload.
+Server->Browser: 201 Created
+Note left of Browser: Note added to local notes, rerender notes.
+note left of Browser: Browser builds the li items iterated over from data.json
+note left of Browser: Browser renders the HTML including dynamically added list elements
