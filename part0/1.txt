@@ -1,0 +1,18 @@
+title Adding note
+
+Browser->Server: Post
+Note right of Server: Post payload is the submitted form data.
+Server->Browser: Redirect response 302
+Note left of Browser: Redirect url is the main page.
+Browser->Server: Get main page
+Server->Browser: Notes html
+Browser->Server: Get styles.css
+Server->Browser: Styles.css
+Note left of Browser: Render CSS
+Browser->Server: get main.js
+Server->Browser: main.js
+note left of Browser: Executes JS logic
+Browser->Server: Get data.json
+Server->Browser: data.json
+note left of Browser: Browser builds the li items iterated over from data.json
+note left of Browser: Browser renders the HTML including dynamically added list elements
