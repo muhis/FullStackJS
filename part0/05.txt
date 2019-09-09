@@ -1,0 +1,13 @@
+title Loading SPA
+
+Browser->Server: Get /spa
+Server->Browser: HTML payload response
+Browser->Server: Get main.css
+Server->Browser: main.css
+Note left of Browser: Render CSS
+Browser->Server: get spa.js
+Server->Browser: spa.js
+note left of Browser: Executes JS logic
+Browser->Server: Get data.json
+Server->Browser: data.json
+note left of Browser: Redraw notes
